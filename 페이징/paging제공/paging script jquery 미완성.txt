@@ -1,0 +1,36 @@
+
+<script type="text/javascript">
+      let $form= $("form[name='search']");
+
+		// 각 이벤트 등록
+		// 페이지 링크 클릭, event전파방지, data속성값읽고 form태그 내의 input name=curPage값 바꾸기 
+		//submit
+		$('ul.pagination li a[data-page]').click(function(e) {
+			
+		}); // ul.pagination li a[data-page]
+
+		
+		//form태그내의 버튼 클릭
+		//이벤트전파방지, curPage 값 1로
+		//submit
+		$form.find("button[type=submit]").click(function(e) {
+			
+		});
+		
+		
+
+		
+		// 목록 갯수 변경
+		// id_rowSizePerPage 변경되었을 때
+		// 페이지 1, 목록수 = 현재값 으로 변경 후 서브밋
+		$('#id_rowSizePerPage').change(function(e) {
+			
+		}); // '#id_rowSizePerPage'.change
+
+		// 초기화 버튼 클릭
+		$('#id_btn_reset').click(function() {
+			
+			
+		}); // #id_btn_reset.click 
+	
+	</script>

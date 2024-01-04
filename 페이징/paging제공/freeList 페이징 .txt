@@ -1,0 +1,30 @@
+	<!-- START : 페이지네이션  -->
+		<nav class="text-center">
+			<ul class="pagination">
+
+				<!-- 첫 페이지  -->
+				<li><a href="freeList.jsp?curPage=1" data-page="1"><span aria-hidden="true">&laquo;</span></a></li>
+
+
+				<!-- 이전 페이지 -->
+				<c:if test="">
+					<li><a href="freeList.jsp?curPage=" data-page=""><span aria-hidden="true">&lt;</span></a></li>
+				</c:if>
+
+				<!-- 페이지 넘버링  -->
+				<li><a href="freeList.jsp?curPage=6" data-page="6">6</a></li>
+				<li><a href="freeList.jsp?curPage=7" data-page="7">7</a></li>
+				<li><a href="freeList.jsp?curPage=8" data-page="8">8</a></li>
+				<li class="active"><a href="#">9</a></li>
+				<li><a href="freeList.jsp?curPage=10" data-page="10">10</a></li>
+
+				<!-- 다음  페이지  -->
+				<c:if test="">
+					<li><a href="freeList.jsp?curPage=" data-page=""><span aria-hidden="true">&gt;</span></a></li>
+				</c:if>
+
+				<!-- 마지막 페이지 -->
+				<li><a href="freeList.jsp?curPage=" data-page=""><span aria-hidden="true">&raquo;</span></a></li>
+			</ul>
+		</nav>
+		<!-- END : 페이지네이션  -->

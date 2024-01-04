@@ -1,0 +1,20 @@
+CREATE TABLE piano ( 
+    p_no NUMBER
+    ,p_title VARCHAR(100)
+    ,p_date DATE
+    ,p_composer VARCHAR(100)
+    ,p_category CHAR(4)
+    ,CONSTRAINT piano_pk PRIMARY KEY(p_no) );
+CREATE SEQUENCE seq_piano;
+Insert into PIANO (P_NO,P_TITLE,P_DATE,P_COMPOSER,P_CATEGORY) values (seq_piano.nextval,'아들린느를 위한 발라드',to_date('20/08/24','RR/MM/DD'),'폴 드 세느빌','PC01');
+Insert into PIANO (P_NO,P_TITLE,P_DATE,P_COMPOSER,P_CATEGORY) values (seq_piano.nextval,'체르니 30번 연습곡 중 26번 ',to_date('20/09/10','RR/MM/DD'),'체르니','PC01');
+Insert into PIANO (P_NO,P_TITLE,P_DATE,P_COMPOSER,P_CATEGORY) values (seq_piano.nextval,'소녀의 기도 ',to_date('20/10/13','RR/MM/DD'),'바다체프스카','PC02');
+Insert into PIANO (P_NO,P_TITLE,P_DATE,P_COMPOSER,P_CATEGORY) values (seq_piano.nextval,'슈베르트 즉흥곡 2번',to_date('21/07/23','RR/MM/DD'),'슈베르트','PC01');
+Insert into PIANO (P_NO,P_TITLE,P_DATE,P_COMPOSER,P_CATEGORY) values (seq_piano.nextval,'모차르트 왈츠 17',to_date('21/08/26','RR/MM/DD'),'모차르트','PC01');
+Insert into PIANO (P_NO,P_TITLE,P_DATE,P_COMPOSER,P_CATEGORY) values (seq_piano.nextval,'은파',to_date('21/01/16','RR/MM/DD'),'와이먼','PC02');
+Insert into PIANO (P_NO,P_TITLE,P_DATE,P_COMPOSER,P_CATEGORY) values (seq_piano.nextval,'Lake louise',to_date('21/09/10','RR/MM/DD'),'유키 구라모토','PC02');
+Insert into PIANO (P_NO,P_TITLE,P_DATE,P_COMPOSER,P_CATEGORY) values (seq_piano.nextval,'아라베스크 no.1',to_date('21/11/26','RR/MM/DD'),'드뷔시','PC01');
+Insert into PIANO (P_NO,P_TITLE,P_DATE,P_COMPOSER,P_CATEGORY) values (seq_piano.nextval,'녹턴 no.2',to_date('20/09/24','RR/MM/DD'),'쇼팽','PC01');
+Insert into PIANO (P_NO,P_TITLE,P_DATE,P_COMPOSER,P_CATEGORY) values (seq_piano.nextval,'작은별 변주곡',to_date('21/05/03','RR/MM/DD'),'모차르트','PC01');
+Insert into PIANO (P_NO,P_TITLE,P_DATE,P_COMPOSER,P_CATEGORY) values (seq_piano.nextval,'Etude op.10 no.5 흑건',to_date('22/05/01','RR/MM/DD'),'쇼팽','PC01');
+

@@ -1,0 +1,11 @@
+<tr>
+	<th>첨부파일</th>
+	<td>
+		<c:forEach var="f" items="${freeBoard.attaches}" varStatus="st">
+		<div> 파일 ${st.count} <a href="<c:url value='/attach/download/${f.atchNo}' />" target="_blank"> 
+		<span class="glyphicon glyphicon-save" aria-hidden="true"></span> ${f.atchOriginalName}
+		</a> Size : ${f.atchFancySize} Down : ${f.atchDownHit}
+		</div>
+		</c:forEach>
+	</td>
+</tr>

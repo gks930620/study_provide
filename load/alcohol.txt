@@ -1,0 +1,23 @@
+CREATE TABLE  alcohol (
+ al_no NUMBER
+ ,al_name VARCHAR(100)
+ ,al_percent NUMBER
+ ,al_category CHAR(4)
+  ,CONSTRAINT  alcohol_pk PRIMARY KEY (al_no)) ; 
+CREATE SEQUENCE seq_alcohol;  
+Insert into ALCOHOL (AL_NO,AL_NAME,AL_PERCENT,AL_CATEGORY) values (seq_alcohol.nextval,'려驪 증류소주 45',45,'AC02');
+Insert into ALCOHOL (AL_NO,AL_NAME,AL_PERCENT,AL_CATEGORY) values (seq_alcohol.nextval,'려驪 증류소주 20',20,'AC02');
+Insert into ALCOHOL (AL_NO,AL_NAME,AL_PERCENT,AL_CATEGORY) values (seq_alcohol.nextval,'산토리 가쿠빈',40,'AC02');
+Insert into ALCOHOL (AL_NO,AL_NAME,AL_PERCENT,AL_CATEGORY) values (seq_alcohol.nextval,'잭 다니엘 ',40,'AC02');
+Insert into ALCOHOL (AL_NO,AL_NAME,AL_PERCENT,AL_CATEGORY) values (seq_alcohol.nextval,'잭 다니엘 허니 ',35,'AC02');
+Insert into ALCOHOL (AL_NO,AL_NAME,AL_PERCENT,AL_CATEGORY) values (seq_alcohol.nextval,'디 카이퍼 크림 드 카시스 ',15,'AC03');
+Insert into ALCOHOL (AL_NO,AL_NAME,AL_PERCENT,AL_CATEGORY) values (seq_alcohol.nextval,'디 카이퍼 피치트리 ',20,'AC03');
+Insert into ALCOHOL (AL_NO,AL_NAME,AL_PERCENT,AL_CATEGORY) values (seq_alcohol.nextval,'디 카이퍼 애플퍼커 ',15,'AC03');
+Insert into ALCOHOL (AL_NO,AL_NAME,AL_PERCENT,AL_CATEGORY) values (seq_alcohol.nextval,'마티니 엑스트라 드라이',18,'AC02');
+Insert into ALCOHOL (AL_NO,AL_NAME,AL_PERCENT,AL_CATEGORY) values (seq_alcohol.nextval,'쿠에르포 모히또',15,'AC03');
+Insert into ALCOHOL (AL_NO,AL_NAME,AL_PERCENT,AL_CATEGORY) values (seq_alcohol.nextval,'팔리니 리몬첼로',26,'AC03');
+Insert into ALCOHOL (AL_NO,AL_NAME,AL_PERCENT,AL_CATEGORY) values (seq_alcohol.nextval,'짐빔 화이트',40,'AC02');
+Insert into ALCOHOL (AL_NO,AL_NAME,AL_PERCENT,AL_CATEGORY) values (seq_alcohol.nextval,'벨스 오리지널',40,'AC02');
+Insert into ALCOHOL (AL_NO,AL_NAME,AL_PERCENT,AL_CATEGORY) values (seq_alcohol.nextval,'아그와 오리지널',30,'AC03');
+Insert into ALCOHOL (AL_NO,AL_NAME,AL_PERCENT,AL_CATEGORY) values (seq_alcohol.nextval,'미도리',23,'AC03');
+

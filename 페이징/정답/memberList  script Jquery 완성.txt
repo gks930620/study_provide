@@ -1,0 +1,59 @@
+<script type="text/javascript">
+		// 변수 정의
+		$form=$("form[name='search']");
+		$curPage=$form.find("input[name='curPage']");
+		
+
+
+		// 각 이벤트 등록
+		// 페이지 링크 클릭, event전파방지, data속성값읽고 form태그 내의 input name=curPage값 바꾸기 
+		//submit
+		$('ul.pagination li a[data-page]').click(function(e) {
+			//a링크를 누르면 get방식으로 감 => 파라미터가 curPage 1개만 넘어가요.
+			//searchVO에 해당하는 데이터(search *, rowSizePerPage 등 +curPage )==form태그 안에 input들 
+			//데이터가 같이넘어가도록 get방식 대신에  form태그 post submit하도록 변경
+			//검색도 했고 현재 5번글이다. ==> 8번 글을 눌렀다 
+			// 검색,rowSizePerPage이 유지되면서 curPage만 8로 바뀌면 됩니다.
+			
+			//기본이벤트 막기, curPage 변경(현재 내가 누른 a태그의 data-page에 있어요) 
+			//, form submit
+			e.preventDefault();
+			$curPage.val($(this).data("page"));
+			$form.submit();
+			
+			
+		}); // ul.pagination li a[data-page]
+
+		
+		//form태그내의 버튼 클릭
+		//이벤트전파방지, curPage 값 1로
+		//submit
+		$form.find("button[type=submit]").click(function(e) {
+			e.preventDefault();
+			$curPage.val(1);
+			$form.submit();
+		});
+		
+		
+
+		
+		// 목록 갯수 변경
+		// id_rowSizePerPage 변경되었을 때
+		// 페이지 1, 목록수 = 현재값 으로 변경 후 서브밋
+		$('#id_rowSizePerPage').change(function(e) {
+			$curPage.val(1);
+			$form.find("input[name='rowSizePerPage']").val($(this).val());
+			$form.submit();
+		}); // '#id_rowSizePerPage'.change
+
+		// 초기화 버튼 클릭
+		$('#id_btn_reset').click(function() {
+			$curPage.val(1);
+			$form.find("input[name='searchWord']").val("");
+			$form.find("select[name='searchType'] option:eq(0)").attr("selected", "selected");
+			$form.find("select[name='searchJob'] option:eq(0)").attr("selected", "selected");
+			$form.find("select[name='searchHobby'] option:eq(0)").attr("selected", "selected");
+			
+		}); // #id_btn_reset.click 
+	
+	</script>

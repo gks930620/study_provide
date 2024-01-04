@@ -1,0 +1,47 @@
+
+<script type="text/javascript">
+		// 변수 정의
+		$form=$("form[name='search']");
+		$curPage=$form.find("input[name='curPage']");
+		
+
+
+		// 각 이벤트 등록
+		// 페이지 링크 클릭
+		$('ul.pagination li a[data-page]').click(function(e) {
+			e.preventDefault(); // 이벤트 전파 방지,  <a>의 기본 클릭이벤트를 막기위함
+			// data-page에 있는 값을 input태그 중 이름이 curPage인 것의 값으로 바꾸고 서브밋
+			$curPage.val($(this).data('page'));
+			$form.submit();	
+		}); // ul.pagination li a[data-page]
+
+		
+		$form.find("button[type=submit]").click(function(e) {
+			e.preventDefault();
+			$curPage.val(1);
+			$form.submit();
+		});
+		
+		
+
+		
+		// 목록 갯수 변경
+		// id_rowSizePerPage 변경되었을 때
+		// 페이지 1, 목록수 = 현재값 으로 변경 후 서브밋
+		$('#id_rowSizePerPage').change(function(e) {
+			$curPage.val(1);
+			$form.find("input[name='rowSizePerPage']").val($(this).val());
+			$form.submit();
+		}); // '#id_rowSizePerPage'.change
+
+		// 초기화 버튼 클릭
+		$('#id_btn_reset').click(function() {
+			$curPage.val(1);
+			$form.find("input[name='searchWord']").val("");
+			$form.find("select[name='searchType'] option:eq(0)").attr("selected", "selected");
+			$form.find("select[name='searchCategory'] option:eq(0)").attr("selected", "selected");
+			
+			
+		}); // #id_btn_reset.click 
+	
+	</script>

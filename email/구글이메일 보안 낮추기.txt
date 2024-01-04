@@ -1,0 +1,9 @@
+구글 이메일 보안 낮추기 
+https://myaccount.google.com/lesssecureapps
+
+혹시 구글메일로 보안 낮추는거 허용하냐고하면 허용
+
+
+
+https://myaccount.google.com/security 에서 앱 비밀번호 사용
+
