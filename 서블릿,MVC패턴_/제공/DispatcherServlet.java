@@ -51,7 +51,7 @@ public class DispatcherServlet  extends HttpServlet{
 				return ;
 			}
 			
-			viewPage=ViewResolver.prefix+viewPage+ViewResolver.suffix;
+			viewPage="/WEB-INF/views/+viewPage+".jsp";
 			RequestDispatcher rd=req.getRequestDispatcher(viewPage);
 			rd.forward(req, resp);
 		} catch (Exception e) {
