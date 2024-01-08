@@ -59,11 +59,7 @@ public class AttachController {
 // 저장된 파일을 응답객체의 스트림으로 내보내기
 			FileUtils.copyFile(f, resp.getOutputStream());
 			resp.getOutputStream().close();
-			try {
-				attachService.increaseDownHit(atchNo);
-			} catch (Throwable e) {
-				logger.error(e.getMessage(), e);
-			}
+
 
 		} catch (BizNotFoundException e) {
 			logger.error(e.getMessage(), e);

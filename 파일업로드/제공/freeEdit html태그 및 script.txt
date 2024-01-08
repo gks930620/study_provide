@@ -1,3 +1,5 @@
+까먹지마 edit에 enctype
+
 <tr>
 	<th>첨부파일
 		<button type="button" id="id_btn_new_file">추가</button>

@@ -21,9 +21,4 @@ public class AttachServiceImpl implements IAttachService {
 		}
 		return vo;
 	}
-
-	@Override
-	public void increaseDownHit(int atchNo) throws BizException {
-		attachDao.increaseDownHit(atchNo);
-	}
 }
