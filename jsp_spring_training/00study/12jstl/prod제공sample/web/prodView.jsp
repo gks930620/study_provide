@@ -25,7 +25,7 @@
 		</tr>	
 		<tr>
 			<td>이미지</td>			
-			<td><img alt="" src="/00study/resources/images/prod/MEM001.jpg"></td>
+			<td><img alt="" src="/jsp_spring_training/00study/resources/images/prod/MEM001.jpg"></td>
 		</tr>	
 		<tr>
 			<td>가격</td>			
@@ -43,7 +43,7 @@
 </table>
 
 <div class="btn-basic-area" >
-	<span><a href="/00study/index.jsp" >Home</a> </span>
+	<span><a href="/jsp_spring_training/00study/index.jsp" >Home</a> </span>
 	<span><a href="prodList.jsp" >상품목록</a> </span>
 </div>
 
